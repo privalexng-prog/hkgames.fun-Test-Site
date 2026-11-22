@@ -3355,7 +3355,7 @@
           if (timeToGoal > 0 && timeToGoal < 1.25) {
             // Reaction delay reduced by 20% for faster reflexes
             p.gkReactTimer = (p.gkReactTimer || 0) + dt;
-            const reactionDelay = isBlueCPU ? 0.14 : 0.11;
+            const reactionDelay = isBlueCPU ? 0.19 : 0.16;
             if (p.gkReactTimer < reactionDelay) {
               return { mx: 0, my: 0, sprint: false };
             }
